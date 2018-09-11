@@ -7,6 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>liz</title>
     <style>
+        @keyframes move {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
         html {
             height: 100%;
         }
@@ -19,8 +33,10 @@
             flex-wrap: wrap;
             font-size: 100px;
             font-weight: 900;
-            background-image: linear-gradient(to right bottom, #e8f3ef 10%, #cad1e6 100%);
+            background-image: linear-gradient(45deg, #88f1cd, #a5c0f7, #88f1cd);
+            background-size: 300%;
             margin: 0;
+            animation: move 6s ease infinite;
         }
 
         img {
