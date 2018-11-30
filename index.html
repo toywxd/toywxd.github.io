@@ -1,62 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>liz</title>
-    <style>
-        @keyframes move {
-            0% {
-                background-position: 0 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        html {
-            height: 100%;
-        }
-
-        body {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            font-size: 100px;
-            font-weight: 900;
-            background-image: linear-gradient(45deg, #88f1cd, #a5c0f7, #88f1cd);
-            background-size: 300%;
-            margin: 0;
-            animation: move 6s ease infinite;
-        }
-
-        img {
-            width: 51%;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .time {
-            width: 30%;
-            margin-bottom: 3%;
-        }
-    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Liz世界</title>
+<script>
+    var docEl = document.documentElement;
+    var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    function recalc() {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
+    }
+    window.addEventListener(resizeEvt, recalc, false);
+    document.addEventListener('DOMContentLoaded', recalc, false);
+</script>
+<link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <div>
-        <img src="./12231536308958_.pic_hd.jpg" alt="" class="time">
-        <img src="./helloliz2.png" alt="">
+    <div class="all">
+        <div class="jifont pianyi"></div>
+        <div class="pinfont pianyi"></div>
+        <div class="zuofont pianyi"></div>
+        <div class="lifont pianyi"></div>
+        <div class="Fangzi pianyi"></div>
+        <div class="eight pianyi"></div>
+        <div class="one pianyi"></div>
+        <div class="zero pianyi"></div>
+        <div class="twofont pianyi"></div>
+        <div class="L"></div>
+        <div class="I"></div>
+        <div class="Z trans"></div>
+        <div class="she trans"></div>
+        <div class="ji"></div>
+        <div class="zhi"></div>
+        <div class="lu"></div>
+        <div class="visual"></div>
+        <div class="loutifang">
+            <div class="AI"></div>
+            <div class="PS"></div>
+        </div>
+        <div class="lipai"></div>
+        <div class="FANGfont"></div>
+        <div class="Fta">
+            <div class="right"></div>
+            <div class="MUSIC"></div>
+            <div class="gaota"></div>
+            <div class="zhaopai"></div>
+            <div class="Fang"></div>
+            <div class="shiba"></div>
+            <div class="shupai"></div>
+            <div class="camera"></div>
+
+        </div>
     </div>
 </body>
-
 </html>
