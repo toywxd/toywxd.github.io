@@ -9,12 +9,19 @@ body{
     padding:0;
     background-image: url(img/lingxing.png),linear-gradient(to bottom right, #d2f9f9, #f8ceda );
     background-repeat: repeat;
-    background-position: top left;
-    animation: mymove 1s infinite;
+    background-position: top left, top left;
+    background-size: auto auto, 200% 200%;
+    animation: mymove 10s infinite;
 }
 @keyframes mymove {
+    0% {
+        background-position: top left, top left;
+    }
     50% {
-        background-position: center;
+        background-position: top left, bottom right;
+    }
+    100% {
+        background-position: top left, top left;
     }
 }
 .trans{
