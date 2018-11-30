@@ -24,6 +24,34 @@ body{
         background-position: top left, top left;
     }
 }
+@keyframes loading {
+    0%{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    90%{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+.loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0%;
+    height: 0%;
+    background: url('./img/loding.gif') center center/ 1.98rem 2.22rem no-repeat, linear-gradient(to bottom right, #d2f9f9, #f8ceda );
+    z-index: 2;
+    animation: loading 3s;
+}
 .trans{
     transition:all 0.4s ease-in-out;
 }
