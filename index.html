@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Liz世界</title>
 <script>
     var docEl = document.documentElement;
@@ -9,50 +10,60 @@
     function recalc() {
         var clientWidth = docEl.clientWidth;
         if (!clientWidth) return;
-        docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
+        if(clientWidth > 750) {
+            docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
+        }
+        else {
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        }
     }
     window.addEventListener(resizeEvt, recalc, false);
     document.addEventListener('DOMContentLoaded', recalc, false);
 </script>
 <link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="./index2.css">
 </head>
 
 <body>
-    <div class="loading"></div>
-    <div class="all">
-        <div class="jifont pianyi"></div>
-        <div class="pinfont pianyi"></div>
-        <div class="zuofont pianyi"></div>
-        <div class="lifont pianyi"></div>
-        <div class="Fangzi pianyi"></div>
-        <div class="eight pianyi"></div>
-        <div class="one pianyi"></div>
-        <div class="zero pianyi"></div>
-        <div class="twofont pianyi"></div>
-        <div class="L"></div>
-        <div class="I"></div>
-        <div class="Z trans"></div>
-        <div class="she trans"></div>
-        <div class="ji"></div>
-        <div class="zhi"></div>
-        <div class="lu"></div>
-        <div class="visual"></div>
-        <div class="loutifang">
-            <div class="AI"></div>
-            <div class="PS"></div>
-        </div>
-        <div class="lipai trans"></div>
-        <div class="FANGfont"></div>
-        <div class="Fta">
-            <div class="right trans"></div>
-            <div class="MUSIC"></div>
-            <div class="gaota"></div>
-            <div class="zhaopai"></div>
-            <div class="Fang"></div>
-            <div class="shiba"></div>
-            <div class="shupai"></div>
-            <div class="camera"></div>
+    <div class="app">
+        <!-- <div class="loading"></div> -->
+        <div class="all">
+            <div class="sjzl">
+                 <div class="she"></div>
+                 <div class="ji"></div>
+                 <div class="zhi"></div>
+                 <div class="lu"></div>
+            </div>
+            <div class="jifont pianyi"></div>
+            <div class="pinfont pianyi"></div>
+            <div class="zuofont pianyi"></div>
+            <div class="lifont pianyi"></div>
+            <div class="Fangzi pianyi"></div>
+            <div class="eight pianyi"></div>
+            <div class="one pianyi"></div>
+            <div class="zero pianyi"></div>
+            <div class="twofont pianyi"></div>
+            <div class="L"></div>
+            <div class="I"></div>
+            <div class="Z trans"></div>
+            <div class="visual"></div>
+            <div class="loutifang">
+                <div class="AI"></div>
+                <div class="PS"></div>
+            </div>
+            <div class="lipai trans"></div>
+            <div class="FANGfont"></div>
+            <div class="Fta">
+                <div class="right trans"></div>
+                <div class="MUSIC"></div>
+                <div class="gaota"></div>
+                <div class="zhaopai"></div>
+                <div class="Fang"></div>
+                <div class="shiba"></div>
+                <div class="shupai"></div>
+                <div class="camera"></div>
 
+            </div>
         </div>
     </div>
 </body>

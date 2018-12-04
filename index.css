@@ -1,9 +1,11 @@
-html{
+html, body{
     width: 100%;
     height: 100%;
+    margin:0;
+    padding:0;
     }
-body{
-    height: 100%;
+.app{
+    min-height: 100%;
     width: 100%;
     margin:0;
     padding:0;
@@ -12,6 +14,9 @@ body{
     background-position: top left, top left;
     background-size: auto auto, 200% 200%;
     animation: mymove 10s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @keyframes mymove {
     0% {
@@ -64,11 +69,9 @@ body{
 .all{
     width: 16.38rem;
     height: 9.23rem;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%)
-    }
+    position: relative;
+    margin: 0 auto;
+}
 .right{
     width: .46rem;
     height: 1.8rem;
@@ -192,54 +195,64 @@ body{
 .L:hover{
     background: url(img/LL.png) 0 0/100% 100% no-repeat;
 }
-.she{
+.sjzl{
+    width: 0.7rem;
+    position: absolute;
+    bottom:1.73rem;
+    right: 0rem;
+}
+ .she{
     width: .63rem;
     height: .94rem;
-    position:absolute;
-    top:4.73rem;
-    right: 0.03rem;
-    background:url(img/she.png) 0 0/100% 100% no-repeat;
+    /* position:absolute; */
+    /* top:4.73rem; */
+    /* right: 0.03rem; */
+    transition:all 0.4s ease-in-out;
+    background:url(img/she.png) 0 0/.63rem .94rem no-repeat;
 }
 .she:hover{
-    background:url(img/sheL.png) 0 0/100% 100% no-repeat;
-    transform: translate3d(0,-30px,0);
+    background:url(img/sheL.png) 0 0/.63rem .94rem no-repeat;
+    /* transform: translate3d(0,-30px,0); */
+    padding-bottom: 30px;
 }
 .ji{
     width: .63rem;
     height: .94rem;
-    position:absolute;
+    /* position:absolute;
     top:5.74rem;
-    right: 0.03rem;
-    background:url(img/ji.png) 0 0/100% 100% no-repeat;
+    right: 0.03rem; */
+    background:url(img/ji.png) 0 0/.63rem .94rem no-repeat;
     transition:all 0.4s ease-in-out;
 }
 .ji:hover{
-    background:url(img/jiL.png) 0 0/100% 100% no-repeat;
-    transform: translate3d(0,-30px,0,);
+    background:url(img/jiL.png) 0 0/.63rem .94rem no-repeat;
+    padding-bottom: 30px;
 }
 .zhi{
     width: .55rem;
     height: .86rem;
-    position:absolute;
+    /* position:absolute;
     top:6.75rem;
-    right: 0.07rem;
-    background:url(img/zhi.png) 0 0/100% 100% no-repeat;
+    right: 0.07rem; */
+    background:url(img/zhi.png) 0 0/.55rem .86rem no-repeat;
     transition:all 0.4s ease-in-out;
 }
 .zhi:hover{
-    background:url(img/zhiL.png) 0 0/100% 100% no-repeat;
+    background:url(img/zhiL.png) 0 0/.55rem .86rem no-repeat;
+    padding-bottom: 30px;
 }
 .lu{
     width: .7rem;
     height: 1rem;
-    position:absolute;
+    /* position:absolute;
     top:7.63rem;
-    right: 0rem;
-    background:url(img/lu.png) 0 0/100% 100% no-repeat;
+    right: 0rem; */
+    background:url(img/lu.png) 0 0/.7rem 1rem no-repeat;
     transition:all 0.4s ease-in-out;
 }
 .lu:hover{
-    background:url(img/luL.png) 0 0/100% 100% no-repeat;
+    padding-bottom: 30px;
+    background:url(img/luL.png) 0 0/.7rem 1rem no-repeat; 
 }
 .visual{
     width: 1.84rem;
