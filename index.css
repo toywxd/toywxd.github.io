@@ -84,29 +84,29 @@ html, body{
 .right:hover{
     background:url(img/rightL.png) 0 0/100% 100% no-repeat;
 }
-.jifont{
-    width: .49rem;
-    height: .87rem;
+.jie{
+    width: .52rem;
+    height: .88rem;
     position: absolute;
-    top:1.45rem;
-    left:3.95rem;
-    background: url(img/jifont.png) 0 0/100% 100% no-repeat;
+    top:1.34rem;
+    left:3.79rem;
+    background: url(img/jie.png) 0 0/100% 100% no-repeat;
 }
-.zuofont{
-    width: .56rem;
-    height: .87rem;
+.de{
+    width: .51rem;
+    height: .93rem;
     position: absolute;
-    top:.7rem;
-    left:2.59rem;
-    background: url(img/zuofont.png) 0 0/100% 100% no-repeat;
+    top:.58rem;
+    left:2.49rem;
+    background: url(img/de.png) 0 0/100% 100% no-repeat;
 }
-.pinfont{
+.shi{
     width: .56rem;
-    height: .87rem;
+    height: .89rem;
     position: absolute;
-    top:1.09rem;
-    left:3.35rem;
-    background: url(img/pinfongt.png) 0 0/100% 100% no-repeat;
+    top:0.97em;
+    left:3.14rem;
+    background: url(img/shi.png) 0 0/100% 100% no-repeat;
 }
 .lifont{
     width: .56rem;

@@ -20,29 +20,29 @@
     .right:hover{
         background:url(img/rightL.png) 0 0/100% 100% no-repeat;
     }
-    .jifont{
-        width: .49rem;
-        height: .87rem;
+    .jie{
+        width: .52rem;
+        height: .88rem;
         position: absolute;
         top: 0rem;
-        left: 6.39rem;
-        background: url(img/jifont.png) 0 0/100% 100% no-repeat;
+        left: 6.36rem;
+        background: url(img/jie.png) 0 0/100% 100% no-repeat;
     }
-    .zuofont{
-        width: .56rem;
-        height: .87rem;
+    .de{
+        width: .51rem;
+        height: .93rem;
         position: absolute;
         top: 0rem;
-        left:4.72rem;
-        background: url(img/zuofont.png) 0 0/100% 100% no-repeat;
+        left:4.76rem;
+        background: url(img/de.png) 0 0/100% 100% no-repeat;
     }
-    .pinfont{
+    .shi{
         width: .56rem;
-        height: .87rem;
+        height: .89rem;
         position: absolute;
         top: 0rem;
-        left: 5.59rem;
-        background: url(img/pinfongt.png) 0 0/100% 100% no-repeat;
+        left: 5.56rem;
+        background: url(img/shi.png) 0 0/100% 100% no-repeat;
     }
     .lifont{
         width: .56rem;
