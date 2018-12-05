@@ -1,4 +1,46 @@
 @media all and (max-width: 1024px) {
+    .app{
+        min-height: 100%;
+        width: 100%;
+        margin:0;
+        padding:0;
+        background-image: url(img/lingxing.png),linear-gradient(to bottom right, #d2f9f9, #f8ceda );
+        background-repeat: repeat;
+        background-position: top left, top left;
+        background-size: auto auto, 200% 200%;
+        animation: mymove 10s infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @keyframes mymove {
+        0% {
+            background-position: top left, top left;
+        }
+        50% {
+            background-position: top left, bottom right;
+        }
+        100% {
+            background-position: top left, top left;
+        }
+    }
+    @keyframes loading {
+        0%{
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+        }
+        90%{
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+        }
+        100% {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
     .all{
         width: 6.88rem;
         height: 12.21rem;
