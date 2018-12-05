@@ -96,6 +96,7 @@
         top:8.14rem;
         left: 1.25em;
         background:url(img/Z.png) 0 0/100% 100% no-repeat;
+        z-index: 2;
     }
     .Z:hover{
         background: url(img/ZL.png) 0 0/100% 100% no-repeat;
