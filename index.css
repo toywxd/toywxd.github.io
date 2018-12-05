@@ -56,6 +56,7 @@ html, body{
     background: url('./img/loding.gif') center center/ 1.98rem 2.22rem no-repeat, linear-gradient(to bottom right, #d2f9f9, #f8ceda );
     z-index: 2;
     animation: loading 5.6s;
+    z-index: 999;
 }
 .trans{
     transition:all 0.4s ease-in-out;
