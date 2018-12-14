@@ -83,7 +83,7 @@ $(() => {
             end();
         }
     })
-    $('.result').click(reset)
-    $('.starbtn').mousedown(start)
-    $('.starbtn').mouseup(end)
+    $('.result').click(reset);
+    $('.starbtn').on('touchstart', start);
+    $('.starbtn').on('touchend', end);
 })
