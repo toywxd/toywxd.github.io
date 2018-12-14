@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: url('./img/beijing.png') 0 0/100% 100% no-repeat;
+    position: relative;
+}
+.starbtn{
+    position: absolute;
+    right: 3.6rem;
+    bottom: 1.75rem;
+    width: 3.14rem;
+    height: 1.34rem;
+    z-index: 3;
+}
+.snow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.snow .s1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform :translate3d(0, -100%, 0);
+    width :100%;
+    height: 100%;
+    background: url('./img/snow_ing.png') 0 0/auto 100% no-repeat,
+                url('./img/snow_ing.png') 0 0/auto 100% no-repeat;
+    background-size:auto 100%;
+    animation: snowA 30s infinite linear;
+}
+
+.snow .s2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, -100%, 0);
+    width: 100%;
+    height: 100%;
+    background: url('./img/snow_ing.png') 0 0/auto 100% no-repeat,
+                url('./img/snow_ing.png') 0 0/auto 100% no-repeat;
+    background-size: auto 100%;
+    animation: snowA 30s infinite linear;
+    animation-delay: 15s;
+}
+.zhuangshi{
+    position: absolute;
+    width: 100%;
+    height: 2.71rem;
+    top: 0;
+    left: 0;
+    background: url('./img/zhuangshi.png') 0 0/100% 100% no-repeat;
+    z-index: 1;
+}
+.elk{
+    position: absolute;
+    left: 0;
+    bottom: 1.05rem;
+    width: 3.67rem;
+    height: 3.77rem;
+    background: url('./img/elk.png') 0 0/100% 100% no-repeat;
+    z-index: 1;
+}
+.old_man{
+    position: absolute;
+    right: 0;
+    bottom: .84rem;
+    width: 3.97rem;
+    height: 3.82rem;
+    background: url('./img/old_man.png') 0 0/100% 100% no-repeat;
+    z-index: 1;
+}
+.main{
+    position: absolute;
+    left: 50%;
+    bottom: .55rem;
+    transform: translateX(-50%);
+    width: 13.1rem;
+    height: 8.4rem;
+    background: url('./img/main.png') 0 0/100% 100% no-repeat;
+}
+.main .top{
+    position: absolute;
+    width: 13.51rem;
+    height: 3.76rem;
+    top: -.2rem;
+    left: -.4rem;
+    background: url('./img/snow.png') 0 0/100% 100% no-repeat;
+}
+.main .left{
+    position: absolute;
+    width: 9.12rem;
+    height: 7.27rem;
+    top: .32rem;
+    left: .28rem;
+    background: url('./img/light_border.png') 0 0/100% 100% no-repeat;
+    padding: 1.2rem 1.1rem 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main .kong{
+    position: absolute;
+    width: 9.12rem;
+    height: 7.27rem;
+    top: .32rem;
+    left: .28rem;
+    background: url('./img/light_border.png') 0 0/100% 100% no-repeat;
+    display: none;
+}
+.main .kong p{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .left.active{
+    animation: deng .5s linear infinite;
+}
+.main .left .item{
+    width: 2.22rem;
+    height: 1.63rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./img/christmas.png') center center/.9rem 1.39rem no-repeat, url('./img/card.png') 0 0/100% 100% no-repeat;
+}
+.main .left .item.active{
+    background: url('./img/christmas.png') center center/.9rem 1.39rem no-repeat, url('./img/card_active.png') 0 0/100% 100% no-repeat;
+}
+
+.main .right{
+    width: 3.14rem;
+    height: 100%;
+    position: absolute;
+    right: .55rem;
+    top: 0;
+}
+.main .right .deng{
+    position: absolute;
+    left: 0.2rem;
+    top: 1.9rem;
+    width: .67rem;
+    height: .5rem;
+    background: url('./img/huise.png') 0 0/100% 100% no-repeat;
+}
+.main .right .deng.active{
+    background: url('./img/green.png') 0 0/100% 100% no-repeat;
+}
+.main .right .rod{
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    width: 3rem;
+    height: 4.5rem;
+    background: url('./img/close.png') top center/2.82rem 2.13rem no-repeat;
+}
+.main .right .rod.active{
+    background: url('./img/open.png') bottom center/3.05rem 2.72rem no-repeat;
+}
+.main .right .btn{
+    position: absolute;
+    right: 0rem;
+    bottom: 1.2rem;
+    width: 3.14rem;
+    height: 1.34rem;
+    background: url('./img/kstaranniu.png') 0 0/100% 100% no-repeat;
+}
+.main .right .btn.active{
+    background: url('./img/kstaranniu_active.png') 0 0/100% 100% no-repeat;
+}
+
+
+.result{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.result.active{
+    display: block;
+}
+.result .model{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .4s;
+    background:rgba(0,0,0,0.7) url('./img/light.png') center center/9.11rem 10.31rem no-repeat;
+}
+.result.active .model{
+    animation: fadeIn .6s linear;
+    animation-fill-mode: forwards;
+}
+.result.active .card{
+    animation: result .6s linear;
+    animation-fill-mode: forwards;
+}
+.result .card{
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 4.45rem;
+    height: 6.89rem;
+}
+.result .back{
+    /* opacity: 0; */
+    padding-top: 1.5rem;
+    background: url('./img/main_card_bottom.png') 0 0/100% 100% no-repeat;
+}
+.result .back .pic{
+    max-width: 2.8rem;
+    display: block;
+    margin: 0 auto;
+}
+.result .back .card-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./img/main_card_top.png') 0 0/100% 100% no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: .4rem;
+}
+.result .back .card-top .name{
+    font-size: .28rem;
+    color:#1c1c1c;
+    font-weight: 900;
+}
+.result .font{
+    background: url('./img/christmas.png') 0 0/100% 100% no-repeat;
+}
+.result .card.active.font{
+    animation: flipOutY .3s 0s linear both;
+}
+.result .card.active.back{
+    animation: flipInY .3s .2s linear both;
+}
